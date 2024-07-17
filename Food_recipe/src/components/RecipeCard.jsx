@@ -14,7 +14,7 @@ export default function RecipeCard({ recipe }) {
       </div>
       <div className="px-6 pt-4 pb-4">
         <NavLink
-          to="/recipe-detail"
+          to={`/recipe-detail/${recipe.id}`}
           className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full"
         >
           View Recipe
