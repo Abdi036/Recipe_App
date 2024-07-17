@@ -72,7 +72,7 @@ export default function Navbar() {
       </div>
       {/* Mobile Menu */}
       <div className="mobile-menu hidden md:hidden">
-        <Link to="/" className="block py-2 px-4 text-sm text-gray-700">
+        <Link to="/" className={`block py-2 px-4 text-sm text-gray-700 `}>
           Home
         </Link>
         <Link
