@@ -81,6 +81,7 @@ export default function Navbar() {
         >
           AllRecipes
         </Link>
+
         <Link
           to="/my-recipes"
           className="block py-2 px-4 text-sm text-gray-700"

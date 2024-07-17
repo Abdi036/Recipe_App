@@ -7,12 +7,14 @@ import Favorites from "./pages/Favorites";
 import Myrecipes from "./pages/Myrecipes";
 import AllRecipes from "./pages/AllRecipes";
 import RecipeDetail from "./components/RecipeDetail";
+import AddRecipe from "./components/AddRecipe";
 
-function App() {
+export default function App() {
   return (
     <Router>
       <div>
-        <Navbar />
+          <div><Navbar /></div>
+        <div>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/all-recipes" element={<AllRecipes />} />
@@ -21,10 +23,11 @@ function App() {
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/my-recipes" element={<Myrecipes />} />
           <Route path="/recipe-detail/:id" element={<RecipeDetail />} /> 
+          <Route path="/add-recipe" element={<AddRecipe />} /> 
         </Routes>
+        </div>
       </div>
     </Router>
   );
 }
 
-export default App;
