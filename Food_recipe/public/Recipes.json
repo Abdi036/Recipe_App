@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "title": "Fluffy Pancakes",
+    "image": "/Gemini_Generated_Image_ok9sb5ok9sb5ok9s.jfif",
+    "description": "Delicious homemade pancakes made with basic ingredients.",
+    "ingredients": [
+      "1 cup all-purpose flour",
+      "3.5 tsp baking powder",
+      "1 tbsp white sugar",
+      "1/4 tsp salt",
+      "1 egg",
+      "1 cup milk",
+      "2 tbsp butter, melted"
+    ],
+    "cookTime": "20 minutes",
+    "mealType": "breakfast"
+  },
+  {
+    "id": 2,
+    "title": "Grilled Chicken Salad",
+    "image": "/Gemini_Generated_Image_ok9sb5ok9sb5ok9s.jfif",
+    "description": "A fresh and flavorful salad with grilled chicken, vegetables, and a zesty dressing.",
+    "ingredients": [
+      "2 boneless, skinless chicken breasts",
+      "5 cups mixed greens",
+      "1 cup cherry tomatoes, halved",
+      "1/2 cucumber, sliced",
+      "1/4 red onion, thinly sliced",
+      "2 tbsp olive oil",
+      "2 tbsp balsamic vinegar",
+      "1 tsp Dijon mustard",
+      "Salt and pepper to taste"
+    ],
+    "cookTime": "30 minutes",
+    "mealType": "lunch"
+  },
+  {
+    "id": 3,
+    "title": "Beef Bolognese Pasta",
+    "image": "/Gemini_Generated_Image_ok9sb5ok9sb5ok9s.jfif",
+    "description": "A classic Italian meat sauce served over your choice of pasta.",
+    "ingredients": [
+      "1 lb ground beef",
+      "1 onion, diced",
+      "3 cloves garlic, minced",
+      "1 carrot, diced",
+      "1 celery stalk, diced",
+      "1 (28 oz) can crushed tomatoes",
+      "1 cup beef broth",
+      "2 tbsp tomato paste",
+      "1 tsp dried oregano",
+      "Salt and pepper to taste",
+      "12 oz pasta of your choice"
+    ],
+    "cookTime": "1 hour",
+    "mealType": "dinner"
+  },
+  {
+    "id": 4,
+    "title": "Vegetable Stir-Fry",
+    "image": "/Gemini_Generated_Image_ok9sb5ok9sb5ok9s.jfif",
+    "description": "A quick and healthy stir-fry with a variety of fresh vegetables.",
+    "ingredients": [
+      "2 tbsp vegetable oil",
+      "1 red bell pepper, sliced",
+      "1 cup broccoli florets",
+      "1 cup snow peas",
+      "1 cup mushrooms, sliced",
+      "2 cloves garlic, minced",
+      "1 tsp grated ginger",
+      "2 tbsp soy sauce",
+      "1 tbsp rice vinegar",
+      "Salt and pepper to taste",
+      "2 cups cooked rice"
+    ],
+    "cookTime": "25 minutes",
+    "mealType": "dinner"
+  },
+  {
+    "id": 5,
+    "title": "Baked Salmon with Lemon Dill Sauce",
+    "image": "/Gemini_Generated_Image_ok9sb5ok9sb5ok9s.jfif",
+    "description": "Tender baked salmon fillets served with a creamy lemon dill sauce.",
+    "ingredients": [
+      "4 salmon fillets",
+      "2 tbsp olive oil",
+      "Salt and pepper to taste",
+      "1/2 cup sour cream",
+      "2 tbsp lemon juice",
+      "2 tsp fresh dill, chopped",
+      "1 clove garlic, minced",
+      "1 tsp Dijon mustard"
+    ],
+    "cookTime": "30 minutes",
+    "mealType": "dinner"
+  },
+  {
+    "id": 6,
+    "title": "Spinach and Feta Quiche",
+    "image": "/Gemini_Generated_Image_ok9sb5ok9sb5ok9s.jfif",
+    "description": "A flavorful quiche with a buttery crust, fresh spinach, and creamy feta cheese.",
+    "ingredients": [
+      "1 pre-made pie crust",
+      "1 tbsp olive oil",
+      "1 onion, diced",
+      "3 cups fresh spinach, chopped",
+      "4 eggs",
+      "1 cup milk",
+      "1/2 cup crumbled feta cheese",
+      "Salt and pepper to taste"
+    ],
+    "cookTime": "45 minutes",
+    "mealType": "breakfast"
+  },
+  {
+    "id": 7,
+    "title": "Turkey and Avocado Sandwich",
+    "image": "/Gemini_Generated_Image_ok9sb5ok9sb5ok9s.jfif",
+    "description": "A delicious and satisfying sandwich with roasted turkey, creamy avocado, and fresh vegetables.",
+    "ingredients": [
+      "4 slices whole-wheat bread",
+      "4 slices roasted turkey breast",
+      "1 avocado, sliced",
+      "2 tomato slices",
+      "1/4 cup alfalfa sprouts",
+      "2 tbsp mayonnaise",
+      "1 tbsp Dijon mustard",
+      "Salt and pepper to taste"
+    ],
+    "cookTime": "10 minutes",
+    "mealType": "lunch"
+  },
+  {
+    "id": 8,
+    "title": "Beef and Broccoli Stir-Fry",
+    "image": "/Gemini_Generated_Image_ok9sb5ok9sb5ok9s.jfif",
+    "description": "A classic Chinese-inspired stir-fry with tender beef and fresh broccoli.",
+    "ingredients": [
+      "1 lb flank steak, thinly sliced",
+      "2 tbsp soy sauce",
+      "2 tsp cornstarch",
+      "2 tbsp vegetable oil",
+      "3 cups broccoli florets",
+      "3 cloves garlic, minced",
+      "1 tbsp grated ginger",
+      "2 tbsp oyster sauce",
+      "1 tbsp rice vinegar",
+      "Salt and pepper to taste",
+      "Cooked rice, for serving"
+    ],
+    "cookTime": "30 minutes",
+    "mealType": "dinner"
+  },
+  {
+    "id": 9,
+    "title": "Veggie Fried Rice",
+    "image": "/Gemini_Generated_Image_ok9sb5ok9sb5ok9s.jfif",
+    "description": "A quick and easy fried rice dish packed with fresh vegetables.",
+    "ingredients": [
+      "2 cups cooked rice",
+      "2 tbsp vegetable oil",
+      "1 cup mixed frozen vegetables (peas, carrots, corn)",
+      "2 eggs, beaten",
+      "2 green onions, chopped",
+      "2 tbsp soy sauce",
+      "1 tsp sesame oil",
+      "Salt and pepper to taste"
+    ],
+    "cookTime": "20 minutes",
+    "mealType": "lunch"
+  }
+]
