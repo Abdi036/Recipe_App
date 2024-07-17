@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Navbar() {
+export default function Navbar() {
   return (
     <nav className="bg-white shadow-lg fixed w-full top-0 z-10">
       <div className="max-w-7xl mx-auto px-4">
@@ -90,4 +90,3 @@ function Navbar() {
   );
 }
 
-export default Navbar;
