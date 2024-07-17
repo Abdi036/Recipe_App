@@ -1,10 +1,16 @@
 import { useNavigate, useParams } from "react-router-dom";
 import Recipes from "../../public/Recipes.json";
+import { FaStar, FaRegStar, FaHeart, FaRegHeart } from "react-icons/fa";
+import { useState } from "react";
 
 export default function RecipeDetail() {
-  let { id } = useParams();
+  const [isFavorite, setIsFavorite] = useState(false);
+  const [rating, setRating] = useState(0);
+
+  const { id } = useParams();
   const navigate = useNavigate();
-  let recipe = Recipes.find((recipe) => recipe.id === parseInt(id));
+
+  const recipe = Recipes.find((recipe) => recipe.id === parseInt(id));
 
   if (!recipe) {
     return (
@@ -14,10 +20,19 @@ export default function RecipeDetail() {
     );
   }
 
+  const toggleFavorite = () => {
+    setIsFavorite(!isFavorite);
+  };
+
+  const handleRating = (value) => {
+    setRating(value);
+    console.log(value);
+  };
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
       <button
-        className=" text-blue-400 font-bold py-2 px-4 rounded"
+        className="text-blue-400 font-bold py-2 px-4 rounded"
         onClick={() => navigate(-1)}
       >
         &larr; Back
@@ -75,6 +90,43 @@ export default function RecipeDetail() {
               />
             </svg>
             <span className="text-gray-700">{recipe.mealType}</span>
+          </div>
+
+          {/* Add to Favorite */}
+          <div className="flex items-center mb-4">
+            <button
+              className="flex items-center text-gray-700"
+              onClick={toggleFavorite}
+            >
+              {isFavorite ? (
+                <FaHeart className="text-red-500 mr-2" />
+              ) : (
+                <FaRegHeart className="mr-2" />
+              )}
+              Add to Favorites
+            </button>
+          </div>
+
+          <div className="flex items-center mb-4">
+            <span className="text-gray-700 mr-2">Rate this recipe:</span>
+            {Array.from({ length: 5 }, (_, index) => (
+              <>
+                <button
+                  key={index}
+                  onClick={() => handleRating(index + 1)}
+                  className={`text-2xl ${
+                    index < rating ? "text-yellow-500" : "text-gray-300"
+                  } focus:outline-none`}
+                >
+                  {index < rating ? <FaStar /> : <FaRegStar />}
+                </button>
+              </>
+            ))}
+          </div>
+          <div>
+            {rating && rating >= 4 ? "😍 Delicious" : ""}
+            {rating && rating === 3 ? "😊 Good" : ""}
+            {rating && rating <= 2 ? "😥 Meah" : ""}
           </div>
         </div>
       </div>
