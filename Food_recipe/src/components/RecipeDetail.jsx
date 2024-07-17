@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Recipes from "../../public/Recipes.json";
 
 export default function RecipeDetail() {
   let { id } = useParams();
+  const navigate = useNavigate();
   let recipe = Recipes.find((recipe) => recipe.id === parseInt(id));
 
   if (!recipe) {
@@ -15,7 +16,13 @@ export default function RecipeDetail() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+      <button
+        className=" text-blue-400 font-bold py-2 px-4 rounded"
+        onClick={() => navigate(-1)}
+      >
+        &larr; Back
+      </button>
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden mt-4">
         <img
           className="w-full h-64 object-cover object-center"
           src={recipe.image}
