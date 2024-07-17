@@ -21,6 +21,12 @@ export default function Navbar() {
             <Link to="/" className="py-5 px-3 text-gray-700">
               Home
             </Link>
+            <Link
+              to="/all-recipes"
+              className="block py-2 px-4 text-sm text-gray-700"
+            >
+              AllRecipes
+            </Link>
             <Link to="/my-recipes" className="py-5 px-3 text-gray-700">
               My Recipes
             </Link>
@@ -70,6 +76,12 @@ export default function Navbar() {
           Home
         </Link>
         <Link
+          to="/all-recipes"
+          className="block py-2 px-4 text-sm text-gray-700"
+        >
+          AllRecipes
+        </Link>
+        <Link
           to="/my-recipes"
           className="block py-2 px-4 text-sm text-gray-700"
         >
@@ -89,4 +101,3 @@ export default function Navbar() {
     </nav>
   );
 }
-

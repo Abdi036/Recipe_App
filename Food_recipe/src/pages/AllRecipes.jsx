@@ -1,13 +1,11 @@
 import Recipes from "../../public/Recipes.json";
 import RecipeCard from "../components/RecipeCard";
-
-export default function Myrecipe() {
+export default function AllRecipes() {
   return (
     <div className="pt-20 flex flex-wrap items-center justify-center gap-5">
-      {Recipes.map(
-        (recipe) =>
-          recipe.id < 3 && <RecipeCard key={recipe.id} recipe={recipe} />
-      )}
+      {Recipes.map((recipe) => (
+        <RecipeCard key={recipe.id} recipe={recipe} />
+      ))}
     </div>
   );
 }
