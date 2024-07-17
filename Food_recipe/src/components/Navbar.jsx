@@ -24,7 +24,7 @@ function Navbar() {
             <Link to="/my-recipes" className="py-5 px-3 text-gray-700">
               My Recipes
             </Link>
-            <Link to="/favorite" className="py-5 px-3 text-gray-700">
+            <Link to="/favorites" className="py-5 px-3 text-gray-700">
               Favorites
             </Link>
           </div>

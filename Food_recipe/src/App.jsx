@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import LandingPage from "./pages/LandingPage";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
-import Favorite from "./pages/Favorite";
+import Favorites from "./pages/Favorites";
 import Myrecipes from "./pages/Myrecipes";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/favorite" element={<Favorite />} />
+          <Route path="/favorites" element={<Favorites />} />
           <Route path="/my-recipes" element={<Myrecipes />} />
         </Routes>
       </div>
