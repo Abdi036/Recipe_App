@@ -1,14 +1,14 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Recipes from "../../public/Recipes.json";
 import { FaStar, FaRegStar, FaHeart, FaRegHeart } from "react-icons/fa";
 import { useState } from "react";
+import BackButtons from "../utils/BackButtons";
 
 export default function RecipeDetail() {
   const [isFavorite, setIsFavorite] = useState(false);
   const [rating, setRating] = useState(0);
 
   const { id } = useParams();
-  const navigate = useNavigate();
 
   const recipe = Recipes.find((recipe) => recipe.id === parseInt(id));
 
@@ -31,12 +31,7 @@ export default function RecipeDetail() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
-      <button
-        className="text-blue-400 font-bold py-2 px-4 rounded"
-        onClick={() => navigate(-1)}
-      >
-        &larr; Back
-      </button>
+      <BackButtons />
       <div className="bg-white rounded-lg shadow-lg overflow-hidden mt-4">
         <img
           className="w-full h-64 object-cover object-center"

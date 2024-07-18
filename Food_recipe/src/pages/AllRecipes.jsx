@@ -21,19 +21,21 @@ export default function AllRecipes() {
           placeholder="Search recipes..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full md:w-1/2 p-2 border border-gray-300 rounded-3xl mb-4 md:mb-0"
+          className="w-full md:w-1/3 p-2 border border-gray-300 rounded-3xl mb-4 md:mb-0"
         />
-        <h2 className="text-lg md:text-xl mx-4">Sort Recipes by:</h2>
-        <select
-          value={mealType}
-          onChange={(e) => setMealType(e.target.value)}
-          className="w-full md:w-1/4 p-2 border border-gray-300 rounded-lg"
-        >
-          <option value="">All Meal Types</option>
-          <option value="breakfast">Breakfast</option>
-          <option value="lunch">Lunch</option>
-          <option value="dinner">Dinner</option>
-        </select>
+        <div className="flex items-center w-full md:w-1/2">
+          <h2 className="text-lg md:text-xl mx-4">Sort Recipes by:</h2>
+          <select
+            value={mealType}
+            onChange={(e) => setMealType(e.target.value)}
+            className="w-full md:w-1/4 p-2 border border-gray-300 rounded-lg"
+          >
+            <option value="">All Meal Types</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+          </select>
+        </div>
       </div>
       <div className="flex flex-wrap items-center justify-center gap-5">
         {filteredRecipes.length > 0 ? (

@@ -1,15 +1,9 @@
-import {useNavigate} from "react-router-dom"
+import BackButtons from "../utils/BackButtons";
 
 export default function AddRecipe() {
-  const navigate = useNavigate()
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-20">
-     <button
-        className="text-blue-400 font-bold py-2 px-4  "
-        onClick={() => navigate(-1)}
-      >
-        &larr; Back
-      </button>
+      <BackButtons />
       <h2 className="text-3xl font-bold mb-8">Add a New Recipe</h2>
       <form>
         <div className="mb-4">

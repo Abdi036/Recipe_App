@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Signup() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 pt-16">
-      <div className="bg-white p-6 rounded shadow-md w-full max-w-md">
+      <div className="bg-white px-6 py-3 rounded shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
         <form>
           <div className="mb-4">

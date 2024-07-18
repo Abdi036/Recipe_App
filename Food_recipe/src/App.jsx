@@ -13,21 +13,22 @@ export default function App() {
   return (
     <Router>
       <div>
-          <div><Navbar /></div>
         <div>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/all-recipes" element={<AllRecipes />} />
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/favorites" element={<Favorites />} />
-          <Route path="/my-recipes" element={<Myrecipes />} />
-          <Route path="/recipe-detail/:id" element={<RecipeDetail />} /> 
-          <Route path="/add-recipe" element={<AddRecipe />} /> 
-        </Routes>
+          <Navbar />
+        </div>
+        <div>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/all-recipes" element={<AllRecipes />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/favorites" element={<Favorites />} />
+            <Route path="/my-recipes" element={<Myrecipes />} />
+            <Route path="/recipe-detail/:id" element={<RecipeDetail />} />
+            <Route path="/add-recipe" element={<AddRecipe />} />
+          </Routes>
         </div>
       </div>
     </Router>
   );
 }
-
