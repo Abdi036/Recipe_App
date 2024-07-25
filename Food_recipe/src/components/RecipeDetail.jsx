@@ -7,7 +7,6 @@ import BackButtons from "../utils/BackButtons";
 export default function RecipeDetail() {
   const [isFavorite, setIsFavorite] = useState(false);
   const [rating, setRating] = useState(0);
-
   const { id } = useParams();
 
   const recipe = Recipes.find((recipe) => recipe.id === parseInt(id));
